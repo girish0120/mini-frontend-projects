@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="shoes-section">
+      <div class="card-wrapper">
+        <div id="blobItem"></div>
+        <div class="img-wrapper">
+          <img id="shoeImg" src="./images/shoeGreen.png" alt="nike shoe" />
+        </div>
+        <div class="card-title">Nike Shoes</div>
+        <div class="onhover size-btn-wrapper">
+          <span>Size:</span>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>10</button>
+        </div>
+        <div class="onhover clr-btn-wrapper">
+          <span>Color:</span>
+          <button
+            id="clrGreen"
+            value="green"
+            onclick="changeColor(event)"
+          ></button>
+          <button id="clrRed" value="red" onclick="changeColor(event)"></button>
+          <button
+            id="clrBlue"
+            value="blue"
+            onclick="changeColor(event)"
+          ></button>
+        </div>
+        <div class="onhover buy-btn-wrapper">
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+:root {
+    background-color: rgb(14, 13, 13);
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.shoes-section {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper {
+    position: relative;
+    width: 15rem;
+    height: 22rem;
+
+    background-color: rgb(32, 32, 32);
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-wrapper::before {
+    content: 'NIKE';
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding-top: 5rem;
+    color: grey;
+    font-size: 9rem;
+    font-family: 'REM', sans-serif;
+    opacity: .08;
+}
+
+#blobItem {
+    position: absolute;
+    top: -4rem;
+    right: -5rem;
+
+    width: 15rem;
+    height: 15rem;
+
+    background-color: rgb(187, 249, 43);
+    border-radius: 100% 0 100% 100%;
+}
+
+.img-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-wrapper img {
+    width: 200px;
+    transform: rotate(-20deg) scaleX(-1);
+}
+
+.card-title {
+    color: white;
+    font-family: 'REM', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: .8rem;
+}
+
+.onhover {
+    z-index: 9;
+    display: none;
+}
+
+.onhover:not(:last-child) {
+    margin-bottom: .8rem;
+}
+
+.onhover span {
+    color: rgb(146, 146, 146);
+    font-family: 'REM', sans-serif;
+    font-size: .8rem;
+    padding-right: .4rem;
+    text-transform: uppercase;
+}
+
+.size-btn-wrapper button {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: 'REM', sans-serif;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.size-btn-wrapper button:not(:last-child),
+.clr-btn-wrapper button:not(:last-child) {
+    margin-right: 0.25rem;
+}
+
+.clr-btn-wrapper button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+}
+
+#clrGreen {
+    background-color: rgb(187, 249, 43);
+}
+
+#clrRed {
+    background-color: rgb(238, 75, 43);
+}
+
+#clrBlue {
+    background-color: rgb(0, 150, 255);
+}
+
+.buy-btn-wrapper button {
+    padding: .6rem 1rem;
+    font-family: 'REM', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-bottom: 2.5rem;
+}
+
+.card-wrapper:hover .onhover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn .8s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideUp {
+    from {}
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
